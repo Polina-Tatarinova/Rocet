@@ -1,0 +1,49 @@
+// миксины 
+// миксины для контейнера
+
+@mixin container-XL {
+width: 1450px;
+margin: 0 auto;
+}
+
+@mixin container-L {
+    width: 1192px;
+    margin: 0 auto;
+}
+
+@mixin container-M {
+width: 604px;
+    margin: 0 auto;
+}
+
+@mixin container-S {
+    width: 288px;
+    margin: 0 auto;
+}
+
+// миксин жидкого текст
+
+@mixin fluid-text($max: 60, $min: 12) {
+    font-size: clamp(#{$min}px, #{$max / 1920 * 100}vw, #{$max}px);
+}
+
+//Сброс некоторые свойстваб присущие сылкам
+
+@mixin reset-link {
+    color: inherit; //Цвет ссылки наследуется от родительского элемента
+    &,
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+//Сброс дефолтных стилей у кнопок
+
+@mixin reset-button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+
+

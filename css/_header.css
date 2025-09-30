@@ -1,0 +1,88 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  width: 1920px;
+  background: #fff;
+  padding-top: 72px;
+}
+
+.container {
+  width: 1456px;
+  margin-left: 236px;
+  margin-right: 236px;
+  border: 1px solid green;
+}
+.container .header_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.container .header_wrapper .header_logo {
+  width: 526px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 57px;
+  border: 1px solid red;
+}
+.container .header_wrapper .header_logo img:first-child {
+  width: 239px;
+  height: 48px;
+}
+.container .header_wrapper .header_logo img:last-child {
+  width: 229px;
+  height: 29px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+.container .header_wrapper .header_nav {
+  width: 240px;
+  height: 48px;
+  border: 1px solid yellow;
+}
+.container .header_wrapper .header_nav ol {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+.container .header_wrapper .header_nav .interactiv_icons {
+  -webkit-transition: fill 0.5 ease 0.2;
+  transition: fill 0.5 ease 0.2;
+}
+.container .header_wrapper .header_nav .interactiv_icons .circle {
+  border-radius: 100%;
+  fill: #f6f6f6;
+}
+.container .header_wrapper .header_nav .interactiv_icons .circle_icons {
+  fill: #f96d6b;
+}
+.container .header_wrapper .header_nav .interactiv_icons:active .circle {
+  fill: #f96d6b;
+}
+.container .header_wrapper .header_nav .interactiv_icons:hover .circle {
+  fill: #f96d6b;
+}
+.container .header_wrapper .header_nav .interactiv_icons:hover .circle_icons {
+  fill: #f6f6f6;
+}
+.container .header_wrapper .header_nav .interactiv_icons:active .circle_icons {
+  fill: #f6f6f6;
+}
